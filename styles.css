@@ -1,0 +1,51 @@
+@media (max-width: 600px) {
+    header div {
+        font-size: 20px;
+    }
+
+    main {
+        padding: 10px;
+    }
+}
+
+header {
+    background-color: #f0f0f0;
+    color: #333;
+    text-align: center;
+}
+
+main {
+    font-size: 22px;
+    font-family: lato;
+}
+
+header div {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.name_title {
+    padding: 20px 0 0 5px;
+}
+
+.bio_title {
+    padding: 20px 0 0 5px;
+}
+
+.about_me {
+    padding: 20px 0 0 5px;
+}
+
+.relevant_coursework {
+    padding: 20px 0 0 5px;
+}
+
+.bolden {
+    color: black;
+    font-weight: bold;
+}
+
+.quote {
+    font-size: 16px;
+    font-family: Anta;
+}
