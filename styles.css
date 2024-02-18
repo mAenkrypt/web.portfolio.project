@@ -49,3 +49,25 @@ header div {
     font-size: 16px;
     font-family: Anta;
 }
+
+.relevant_coursework {
+    padding-top: 20px;
+}
+
+.coursework-content div {
+    margin: 10px
+}
+
+.toggle-section {
+    cursor: pointer;
+    color: #5DADE2;
+}
+
+.toggle-indicator {
+    margin-right: 5px;
+}
+
+.coursework-content {
+    display: none;
+    padding-left: 20px;
+}

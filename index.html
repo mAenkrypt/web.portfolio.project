@@ -3,14 +3,20 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
         <link href="styles.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+        <script src="functions.js"></script>
+        
         <title>Hey, I'm Massee!</title>
 
         <!--Messing with Fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Anta&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+
 
     </head>
     <body>
@@ -36,14 +42,87 @@
                 this fall, I am pursuing core computer science courses and plan to attend graduate school for further studies in 
                 computer science.
             </div>
+            <div><h1>Coursework</h1></div>
             <div class="relevant_coursework">
-                <span class="bolden">Mathematics Coursework</span>
-                <div>MATH 2A: Single-Variable Calculus I</div>
-                <div>MATH 2B: Single-Variable Calculus II</div>
-                <div>MATH 2D: Multivariable Calculus I</div>
-                <div>MATH 2E: Multivariable Calculus II</div>
-                <div>MATH 3A: Introduction to Linear Algebra</div>
-                <div>MATH 3D: Elementary Differential Equations <span class="bolden quote" style="font-family: roboto">My favorite!</span></div>
+                <div class="bolden">Mathematics</div>
+                <div onclick="toggle_visibility('mathematics-completed', event)" class="toggle-section">
+                    <span class="bolden toggle-indicator">+</span>Completed Coursework
+                </div>
+                <div id="mathematics-completed" class="coursework-content">
+                    <div>MATH 2A: Single-Variable Calculus I</div>
+                    <div>MATH 2B: Single-Variable Calculus II</div>
+                    <div>MATH 2D: Multivariable Calculus I</div>
+                    <div>MATH 2E: Multivariable Calculus II</div>
+                    <div>MATH 3A: Introduction to Linear Algebra</div>
+                    <div>MATH 3D: Elementary Differential Equations</div>
+                </div>
+                <div onclick="toggle_visibility('mathematics-prospective', event)" class="toggle-section">
+                    <span class="bolden toggle-indicator">+</span>Prospective Coursework
+                </div>
+                <div id="mathematics-prospective" class="coursework-content">
+                    <div>MATH 9: Introduction to Programming for Numerical Analysis</div>
+                    <div>MATH 10: Introduction to Programming for Data Science</div>
+                    <div>MATH 13: Introduction to Abstract Mathematics</div>
+                    <div>MATH 105A/LA: Numerical Analysis I</div>
+                    <div>MATH 105B/LB: Numerical Analysis II</div>
+                    <div>MATH 110A: Optimization I</div>
+                    <div>MATH 110B: Optimization II</div>
+                    <div>MATH 120A: Introduction to Abstract Algebra: Groups</div>
+                    <div>MATH 120B: Introduction to Abstract Algebra: Rings and Fields</div>
+                    <div>MATH 121A: Linear Algebra I</div>
+                    <div>MATH 121B: Linear Algebra II</div>
+                    <div>MATH 130A: Probability I</div>
+                    <div>MATH 140A: Elementary Analysis I</div>
+                    <div>MATH 140B: Elementary Analysis II</div>
+                    <div>MATH 147: Complex Analysis</div>
+                    <div>MATH 178: Mathematical Machine Learning</div>
+            </div>
+            <div class="relevant_coursework">
+                <div class="bolden">Applied Physics</div>
+                <div onclick="toggle_visibility('physics-completed', event)" class="toggle-section">
+                    <span class="bolden toggle-indicator">+</span>Completed Coursework
+                </div>
+                <div id="physics-completed" class="coursework-content">
+                    <div>PHYSICS 2: Introduction to Mathematical Methods for Physics</div>
+                    <div>PHYSICS 7C/LC: Classical Physics—Mechanics</div>
+                    <div>PHYSICS 7D/LD: Classical Physics—Electricity and Magnetism</div>
+                    <div>PHYSICS 7E: Classical Physics—Optics, Waves, Light</div>
+                    <div>PHYSICS 50: Introductory Mathematical Physics</div>
+                    <div>PHYSICS 52B: Fundamentals of Experimental Physics—Circuits</div>
+                </div>
+                <div onclick="toggle_visibility('physics-prospective', event)" class="toggle-section">
+                    <span class="bolden toggle-indicator">+</span>Prospective Coursework
+                </div>
+                <div id="physics-prospective" class="coursework-content">
+                    <div>PHYSICS 51A: Modern Physics</div>
+                    <div>PHYSICS 106W: Advanced Data Acquisition, Analysis, and Scientific Writing</div>
+                    <div>PHYSICS 111A: Classical Mechanics</div>
+                    <div>PHYSICS 112A: Electromagnetic Theory</div>
+                    <div>PHYSICS 113A: Quantum Mechanics</div>
+                    <div>PHYSICS 115A: Statistical Physics</div>
+                    <div>PHYSICS 120: Electronics for Scientists</div>
+                    <div>PHYSICS 194: Research Communication for Physics Majors</div>
+                </div>
+            </div>
+            <div class="relevant_coursework">
+                <div class="bolden">Computer Science</div>
+                <div onclick="toggle_visibility('cs-completed', event)" class="toggle-section">
+                    <span class="bolden toggle-indicator">+</span>Completed Coursework
+                </div>
+                <div id="cs-completed" class="coursework-content">
+                    <div>EECS 10: Computational Methods in Electrical and Computer Engineering</div>
+                </div>
+                <div onclick="toggle_visibility('cs-prospective', event)" class="toggle-section">
+                    <span class="bolden toggle-indicator">+</span>Prospective Coursework
+                </div>
+                <div id="cs-prospective" class="coursework-content">
+                    <div>I&CS 6B: Boolean Logic and Discrete Structures</div>
+                    <div>I&CS 31: Introduction to Programming</div>
+                    <div>I&CS 32: Programming with Software Libraries</div>
+                    <div>I&CS 33: Intermediate Programming</div>
+                    <div>I&CS 45C: Programming in C/C++ as a Second Language</div>
+                    <div>I&CS 46: Data Structure Implementation and Analysis</div>
+                </div>
             </div>
         </main>
     </body>
