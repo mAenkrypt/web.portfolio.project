@@ -71,3 +71,15 @@ header div {
     display: none;
     padding-left: 20px;
 }
+
+img {
+    width: 100%;
+    height: auto;
+    filter: grayscale(20%);
+}
+
+@media (min-width: 768px) {
+    img {
+        width: 50%;
+    }
+}
