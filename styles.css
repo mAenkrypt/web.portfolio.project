@@ -14,26 +14,90 @@ header {
     text-align: center;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+@media (max-width: 1100px) {
+    .container {
+        max-width: 100%;
+        padding: 10px;
+    }
+}
+
 main {
     font-size: 22px;
     font-family: lato;
 }
 
-header div {
-    font-size: 48px;
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+}
+
+.profile img {
+    flex-basis: 40%;
+    height: auto;
+
+}
+
+.name {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 20px;
+}
+
+.profile .name img {
+    width: 50%;
+    height: auto;
+    display: block;
+    padding-left: 120px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.name div {
+    padding-left: 80px;
+    font-size: 84px;
     font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    margin-bottom: -10px;
 }
 
-.name_title {
-    padding: 20px 0 0 5px;
+.name .subtitle {
+    font-size: 24px;
+    font-weight: normal !important;
+    color: black;
+    padding-left: 80px;
+    margin-top: 10px;
 }
 
-.bio_title {
-    padding: 20px 0 0 5px;
+.name .sub_subtitle {
+    font-size: 16px;
+    font-weight: normal !important;
+    color: black;
+    padding-left: 145px;
+    padding-top: 20px;
 }
 
-.about_me {
-    padding: 20px 0 0 5px;
+.bio_text {
+    font-size: 20px;
+    line-height: 1.5;
+    padding-left: 10px;
+    padding-bottom: 30px;
 }
 
 .relevant_coursework {

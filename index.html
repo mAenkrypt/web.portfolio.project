@@ -17,49 +17,51 @@
         <link href="https://fonts.googleapis.com/css2?family=Anta&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
-        <style>
-            .profile {
-                display: flex;
-                align-items: center
-            }
-            
-            .profile img {
-                width: 50%;
-                height: auto;
-                margin-right: 20px;
-            }
-            
-            .name div {
-                padding-left: 80px;
-                font-size: 100px;
-                font-weight: bold;
-                font-family: 'Roboto', sans-serif;
-                text-align: left;
-            }
-        </style>
 
     </head>
-    <body>
+    <body class="container">
         <div class="profile">
             <img src="colombia-photo.jpg" alt="A photo of me">
             <div class="name">
                 <div>MASSEE</div>
                 <div>AKBAR</div>
+                <div class="subtitle">Mathematics & Applied Physics</div>
+                <div class="subtitle">Undergraduate Student</div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/The_University_of_California_Irvine.svg/1024px-The_University_of_California_Irvine.svg.png?20160221015624" alt="The University of California Irvine Seal">
+                <div class="subtitle">University of California, Irvine</div>
+                <div class="subtitle">akbarms [at] uci [dot] edu</div>
+                <div class="sub_subtitle">Instagram Linkedin GitHub</div>
             </div>
         </div>
-        <header>
-            <div>
-            </div>
-        </header>
         <main>
-            <div class="name_title">
-                <div>MASSEE</div>
-                <div>AKBAR</div>
-            </div>
-            <div class="bio_title">
-                <div>Mathematics & Applied Physics Student</div>
-                <div>University of California, Irvine</div>
-                <div>akbarms [at] uci [dot] edu</div>
+            <div>
+                <h2>About Me</h2>
+                <div class="bio_text">Hey, I'm Massee! Welcome to my webpage portfolio I built as part of my final project for
+                    <a href="https://cs50.harvard.edu/x/2024/">Harvard's CS50</a>.</div>
+                <h2>My Academic Journey</h2>
+                <div class="bio_text">I went to California High School in the East Bay Area of Northern California. During my junior year, I had the
+                    incredible privilege to study abroad in France at the American School of Grenoble. Upon return to Cal High
+                    for my final year after an immersive year as an exchange student, I had set my eyes upon UC Irvine's undergraduate program in 
+                    Biological Sciences. 
+                </div>
+                <div class="bio_text">
+                    My initial exposure to the physical sciences began with the  General Chemistry sequence, but it all changed when
+                    I began Calculus I. I came in with a shaky foundation of precalculus and trigonometry. During the length of the first two weeks of 
+                    Calculus I, I felt I had reached my mental limit spending the first few hours of each morning trying to wrap my head around the subject
+                    and feeling completely overwhelemed and inadequate. Through the toil, however, there was a growing desire towards absorbing the material.
+                    After deep work and focus, I had scored a 39/40 on the first midterm examination exactly five weeks from the start of the course. A couple 
+                    hours later, my score changed to 40/40, the answer key had a mistake. I was delighted, but it did not come to me as a surprise. This was 
+                    the first of many times that I would enter the time warp– the intellectual black-hole where I would meet my limit, and through diligence,
+                    optimism, and persistence of thinking I would grow. A wave of content and a sense of accomplishment. All it took was
+                    five weeks to go from learning basic trigonometric functions to applying the chain rule for to derivatives.
+                </div>
+                <div class="bio_text">
+                    During my freshman year, I was exposed to the physical sciences. Courses in general chemistry and calculus. I musterd up the courage to
+                    make a switch into the Applied Physics major. Shortly thereafter, I declared a double major in mathematics and enrolled in core computer
+                    science courses. During this time, I had the oppurtunity and privilege to join Dr. Howard Lee's Nanophotonics Laboratory and work under my
+                    graduate student mentor David Dang to employ novel machine learning models to tackle physical problems. 
+                </div>
+                <h2>Statement of Purpose</h2>
             </div>
             <div class="about_me">
                 <span class="bolden">About me: </span> Hey, I'm Massee! I am a fourth year undergraduate at UC Irvine. 
@@ -71,7 +73,7 @@
             </div>
             <div><h1>Coursework</h1></div>
             <div class="relevant_coursework">
-                <div class="bolden">Mathematics</div>
+                <div class="bolden">Mathematics: The Rigorous Science</div>
                 <div onclick="toggle_visibility('mathematics-completed', event)" class="toggle-section">
                     <span class="bolden toggle-indicator">+</span>Completed Coursework
                 </div>
@@ -105,7 +107,7 @@
                     <div>MATH 178: Mathematical Machine Learning</div>
             </div>
             <div class="relevant_coursework">
-                <div class="bolden">Applied Physics</div>
+                <div class="bolden">Applied Physics: The Powerful Science</div>
                 <div onclick="toggle_visibility('physics-completed', event)" class="toggle-section">
                     <span class="bolden toggle-indicator">+</span>Completed Coursework
                 </div>
@@ -132,7 +134,7 @@
                 </div>
             </div>
             <div class="relevant_coursework">
-                <div class="bolden">Computer Science</div>
+                <div class="bolden">Computer Science: The Magical Science</div>
                 <div onclick="toggle_visibility('cs-completed', event)" class="toggle-section">
                     <span class="bolden toggle-indicator">+</span>Completed Coursework
                 </div>
@@ -153,4 +155,7 @@
             <div><h1>Reading List</h1></div>
         </main>
     </body>
+    <footer>
+        © 2024 by Massee Akbar
+      </footer>      
 </html>
