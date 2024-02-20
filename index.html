@@ -21,7 +21,7 @@
     </head>
     <body class="container">
         <div class="profile">
-            <img src="colombia-photo.jpg" alt="A photo of me">
+            <img src="files/colombia-photo.jpg" alt="A photo of me">
             <div class="name">
                 <div>MASSEE</div>
                 <div>AKBAR</div>
@@ -30,7 +30,11 @@
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/The_University_of_California_Irvine.svg/1024px-The_University_of_California_Irvine.svg.png?20160221015624" alt="The University of California Irvine Seal">
                 <div class="subtitle">University of California, Irvine</div>
                 <div class="subtitle">akbarms [at] uci [dot] edu</div>
-                <div class="sub_subtitle">Instagram Linkedin GitHub</div>
+                <div class="sub_subtitle">
+                    <a href="https:www.linkedin.com/in/masseeakbar/" target="_blank" rel="noopener noreferrer"> LinkedIn </a>
+                    <a href="https://github.com/mAenkrypt" target="_blank" rel="noopener noreferrer"> GitHub </a>
+                    <a href="files/LaTeX-Resume.pdf" target="_blank" rel="noopener noreferrer"> Resume </a>
+                </div>
             </div>
         </div>
         <main>
@@ -71,9 +75,60 @@
                 this fall, I am pursuing core computer science courses and plan to attend graduate school for further studies in 
                 computer science.
             </div>
-            <div><h1>Coursework</h1></div>
+            
+            <div>
+                <h2>Coursework</h2>
+                <div>
+                    <h3>Mathematics</h3>
+                    <div>Completed</div>
+                    <div>Math 2A: Single-Variable Calculus I</div>
+                    <div>Math 2B: Single-Variable Calculus II</div>
+                    <div>Math 2D: Multivariable Calculus I</div>
+                    <div>Math 2E: Multivariable Calculus II</div>
+                    <div>Math 3A: Introduction to Linear Algebra</div>
+                    <div>Math 3D: Elementary Differential Equations</div>
+                </div>
+            </div>
+            
+            <div>
+                <h2>Coursework</h2>
+                <div class="relevant_coursework">
+                    <h3>Mathematics</h3>
+                    <div class="toggle-section" data-target="mathematics-completed">
+                        <span class="toggle-indicator">+</span>Completed Coursework
+                    </div>
+                    <div id="mathematics-completed" class="coursework-content">
+                        <div>MATH 2A: Single-Variable Calculus I</div>
+                        <div>MATH 2B: Single-Variable Calculus II</div>
+                        <div>MATH 2D: Multivariable Calculus I</div>
+                        <div>MATH 2E: Multivariable Calculus II</div>
+                        <div>MATH 3A: Introduction to Linear Algebra</div>
+                        <div>MATH 3D: Elementary Differential Equations</div>
+                    </div>
+                    <div id="mathematics-prospective" class="coursework-content">
+                        <div>MATH 9: Introduction to Programming for Numerical Analysis</div>
+                        <div>MATH 10: Introduction to Programming for Data Science</div>
+                        <div>MATH 13: Introduction to Abstract Mathematics</div>
+                        <div>MATH 105A/LA: Numerical Analysis I</div>
+                        <div>MATH 105B/LB: Numerical Analysis II</div>
+                        <div>MATH 110A: Optimization I</div>
+                        <div>MATH 110B: Optimization II</div>
+                        <div>MATH 120A: Introduction to Abstract Algebra: Groups</div>
+                        <div>MATH 120B: Introduction to Abstract Algebra: Rings and Fields</div>
+                        <div>MATH 121A: Linear Algebra I</div>
+                        <div>MATH 121B: Linear Algebra II</div>
+                        <div>MATH 130A: Probability I</div>
+                        <div>MATH 140A: Elementary Analysis I</div>
+                        <div>MATH 140B: Elementary Analysis II</div>
+                        <div>MATH 147: Complex Analysis</div>
+                        <div>MATH 178: Mathematical Machine Learning</div>
+                    </div>
+                </div>
+            </div>
+
+
             <div class="relevant_coursework">
-                <div class="bolden">Mathematics: The Rigorous Science</div>
+                <div class="bolden">Mathematics</div>
                 <div onclick="toggle_visibility('mathematics-completed', event)" class="toggle-section">
                     <span class="bolden toggle-indicator">+</span>Completed Coursework
                 </div>
@@ -152,10 +207,21 @@
                     <div>I&CS 46: Data Structure Implementation and Analysis</div>
                 </div>
             </div>
-            <div><h1>Reading List</h1></div>
+            <div>
+                <h2>Online Coursework</h2>
+            </div>
+            <div>
+                <h2>Research Interests</h2>
+            </div>
+            <div>
+                <h2>Publications</h2>
+            </div>
+            <div>
+                <h2>Reading List</h2>
+            </div>
         </main>
     </body>
-    <footer>
+    <footer style="font-family: Roboto, sans-serif;">
         © 2024 by Massee Akbar
       </footer>      
 </html>

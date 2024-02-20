@@ -89,7 +89,7 @@ main {
     font-size: 16px;
     font-weight: normal !important;
     color: black;
-    padding-left: 145px;
+    padding-left: 80px;
     padding-top: 20px;
 }
 
@@ -146,4 +146,15 @@ img {
     img {
         width: 50%;
     }
+}
+
+/* styling of anchor tags */
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #3f3f3f;
 }
