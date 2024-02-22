@@ -1,11 +1,10 @@
-@media (max-width: 600px) {
-    header div {
-        font-size: 20px;
-    }
-
-    main {
-        padding: 10px;
-    }
+/* Global styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
 }
 
 header {
@@ -14,30 +13,18 @@ header {
     text-align: center;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 .container {
     max-width: 1100px;
     margin: auto;
     padding: 20px;
 }
 
-@media (max-width: 1100px) {
-    .container {
-        max-width: 100%;
-        padding: 10px;
-    }
-}
-
 main {
     font-size: 22px;
-    font-family: lato;
+    font-family: 'Lato', sans-serif;
 }
 
+/* Profile styling */
 .profile {
     display: flex;
     align-items: center;
@@ -48,15 +35,6 @@ main {
 .profile img {
     flex-basis: 40%;
     height: auto;
-
-}
-
-.name {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-right: 20px;
 }
 
 .profile .name img {
@@ -68,12 +46,42 @@ main {
     margin-bottom: 20px;
 }
 
-.name div {
+.name {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 20px;
+    text-align: left; /* Ensure text is left-aligned */
+}
+
+/* Target the first div directly for the name "MASSEE" */
+.name div:first-child {
+    margin-bottom: -30px; /* Apply negative margin to pull "AKBAR" closer */
+}
+
+
+/* Adjustments to subtitles and the name "AKBAR" without affecting the first div */
+
+
+.name div, .name .subtitle {
     padding-left: 80px;
+    text-align: left; /* Keeps text left-aligned */
+    font-size: 84px; /* Only applies to the first div now, consider moving this to a more specific selector if needed */
+    margin-bottom: -15px; /* Reduced from -10px to bring elements closer */
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+.name div, .name .subtitle, .name .sub_subtitle {
+    padding-left: 80px;
+    text-align: left; /* Ensure text is left-aligned */
+}
+
+.name div {
     font-size: 84px;
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
-    text-align: left;
     margin-bottom: -10px;
 }
 
@@ -81,7 +89,6 @@ main {
     font-size: 24px;
     font-weight: normal !important;
     color: black;
-    padding-left: 80px;
     margin-top: 10px;
 }
 
@@ -89,7 +96,6 @@ main {
     font-size: 16px;
     font-weight: normal !important;
     color: black;
-    padding-left: 80px;
     padding-top: 20px;
 }
 
@@ -98,63 +104,85 @@ main {
     line-height: 1.5;
     padding-left: 10px;
     padding-bottom: 30px;
+    text-align: left; /* Ensure text is left-aligned */
 }
 
-.relevant_coursework {
-    padding: 20px 0 0 5px;
-}
-
-.bolden {
-    color: black;
-    font-weight: bold;
-}
-
-.quote {
-    font-size: 16px;
-    font-family: Anta;
-}
-
-.relevant_coursework {
-    padding-top: 20px;
-}
-
-.coursework-content div {
-    margin: 10px
-}
-
-.toggle-section {
-    cursor: pointer;
-    color: #5DADE2;
-}
-
-.toggle-indicator {
-    margin-right: 5px;
-}
-
-.coursework-content {
-    display: none;
-    padding-left: 20px;
-}
-
+/* Image and link styling */
 img {
     width: 100%;
     height: auto;
     filter: grayscale(20%);
 }
 
-@media (min-width: 768px) {
-    img {
-        width: 50%;
-    }
-}
-
-/* styling of anchor tags */
-
 a {
     color: black;
     text-decoration: none;
+    text-align: left; /* Ensure links are left-aligned */
 }
 
 a:hover {
     color: #3f3f3f;
+}
+
+/* Coursework section styling */
+.coursework-section, .toggle-section {
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    text-align: left; /* Ensure toggle section text is left-aligned */
+}
+
+.toggle-section {
+    background-color: #e9ecef;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-section:hover {
+    background-color: #dee2e6;
+}
+
+.toggle-indicator {
+    font-size: 24px;
+    line-height: 1;
+    user-select: none;
+}
+
+.coursework-content {
+    display: none;
+    padding-left: 20px;
+    animation: slideDown 0.3s ease-out forwards;
+    text-align: left; /* Ensure coursework content text is left-aligned */
+}
+
+.coursework-content div {
+    padding: 5px 0;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 1100px) {
+    .container {
+        max-width: 100%;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    header div, main {
+        font-size: 20px;
+    }
+
+    main {
+        padding: 10px;
+    }
+}
+
+@media (min-width: 768px) {
+    img {
+        width: 50%;
+    }
 }
