@@ -57,7 +57,7 @@ main {
 
 /* Target the first div directly for the name "MASSEE" */
 .name div:first-child {
-    margin-bottom: -30px; /* Apply negative margin to pull "AKBAR" closer */
+    margin-bottom: -40px; /* Apply negative margin to pull "AKBAR" closer */
 }
 
 
@@ -185,4 +185,97 @@ a:hover {
     img {
         width: 50%;
     }
+}
+
+/* Enhanced Physics GRE Score Visualization */
+
+.gre-score-container {
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+    margin: 50px auto;
+    font-family: 'Arial', sans-serif; /* Consistency with global font */
+}
+
+.gre-score-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.gre-score-bar {
+    background-color: #e0e0e0; /* Lighter grey for the background */
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    overflow: hidden; /* Ensures progress bar respects border radius */
+}
+
+.gre-score-progress {
+    background: linear-gradient(45deg, #4b6cb7, #182848); /* Classy gradient */
+    height: 30px;
+    border-radius: 18px; /* Slightly less than container for a smooth effect */
+    width: 0; /* Start width, will be animated */
+    transition: width 2s ease-in-out;
+}
+
+/* Animation trigger on hover (optional) */
+.gre-score-container:hover .gre-score-progress {
+    width: 100%; /* Full width to visualize achieving the goal */
+}
+
+/* My certifications */
+.certifications-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.certifications {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Adjust gap between items */
+}
+
+.certificate {
+    flex-basis: calc(33% - 20px); /* Adjust width minus gap */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Ensures images fit within the borders */
+    transition: transform 0.3s ease; /* Smooth scaling on hover */
+}
+
+.certificate img {
+    width: 100%;
+    max-width: 100%; /* Ensure images are responsive */
+    height: auto;
+    transition: transform 0.3s ease; /* Smooth zoom on hover */
+}
+
+.certificate a {
+    display: block;
+    padding: 10px;
+    background-color: #f0f0f0;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.certificate:hover {
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+.certificate img:hover {
+    transform: scale(1.1); /* Zoom image on hover */
+}
+
+.certifications-container h2 {
+        text-align: center; /* Center the certifications title */
+    }
+
+.certificate a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+.certificate img {
+    filter: saturate(100%); /* Reduce color saturation by 50% */
 }

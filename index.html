@@ -21,25 +21,26 @@
     </head>
     <body class="container">
         <div class="profile">
-            <img src="files/colombia-photo.jpg" alt="A photo of me">
+            <img class="profile-pic" src="files/colombia-photo.jpg" alt="A photo of me">
             <div class="name">
                 <div>MASSEE</div>
                 <div>AKBAR</div>
                 <div class="subtitle">Mathematics & Applied Physics</div>
                 <div class="subtitle">Undergraduate Student</div>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/The_University_of_California_Irvine.svg/1024px-The_University_of_California_Irvine.svg.png?20160221015624" alt="The University of California Irvine Seal">
+                <img class="university-seal" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/The_University_of_California_Irvine.svg/1024px-The_University_of_California_Irvine.svg.png?20160221015624" alt="The University of California Irvine Seal">
                 <div class="subtitle">University of California, Irvine</div>
                 <div class="subtitle">akbarms [at] uci [dot] edu</div>
                 <div class="sub_subtitle">
-                    <a href="https:www.linkedin.com/in/masseeakbar/" target="_blank" rel="noopener noreferrer"> LinkedIn </a>
-                    <a href="https://github.com/mAenkrypt" target="_blank" rel="noopener noreferrer"> GitHub </a>
-                    <a href="files/LaTeX-Resume.pdf" target="_blank" rel="noopener noreferrer"> Resume </a>
+                    <a href="https:www.linkedin.com/in/masseeakbar/" target="_blank" rel="noopener noreferrer">LinkedIn | </a>
+                    <a href="https://github.com/mAenkrypt" target="_blank" rel="noopener noreferrer">GitHub | </a>
+                    <a href="files/LaTeX-Resume.pdf" target="_blank" rel="noopener noreferrer">Cirriculum vitae </a>
                 </div>
             </div>
         </div>
         <main>
             <div>
                 <h2>About Me</h2>
+                <div class="subtitle">Research Assitant at Lee Nano-Optics Lab</div>
                 <div class="bio_text">Hey, I'm Massee! Welcome to my webpage portfolio I built as part of my final project for
                     <a href="https://cs50.harvard.edu/x/2024/">Harvard's CS50</a>.</div>
                 <h2>My Academic Journey</h2>
@@ -84,8 +85,17 @@
 
             <div>
                 <h2>Research Interests</h2>
-                <div>Nanophotonics research with applications in medical imaging, optical communcations, nanotechnology, epsilon-near-zero and meta- materials.
+                <div>Nanophotonics research with applications to medical imaging, optical communcations, nano-optics, epsilon-near-zero and meta- materials.
                     Applications of Machine Learning to model, simulate, and solve physical problems.
+                </div>
+            </div>
+
+            
+
+            <div class="gre-score-container">
+                <h3 class="gre-score-title">GRE® Physics Test: 990/990 – Perfect Score</h3>
+                <div class="gre-score-bar">
+                    <div class="gre-score-progress"></div>
                 </div>
             </div>
 
@@ -112,13 +122,17 @@
                         <span class="toggle-indicator">+</span>Prospective Coursework</div>
                     <div id="physics-prospective" class="coursework-content">
                         <div>Modern Physics</div>
-                        <div>Classical Mechanics</div>
-                        <div>Electrodynamics</div>
+                        <div>Classical Mechanics I</div>
+                        <div>Classical Mechanics II</div>
+                        <div>Classical Electrodynamics I</div>
+                        <div>Classical Electrodynamics II</div>
                         <div>Quantum Mechanics</div>
-                        <div>Thermodynamics & Statistical Mechanics</div>
-                        <div>Electronics Laboratory</div>
-                        <div>Research Communication</div>
-                        <div>Advanced Data Acquisition, Analysis, and Scientific Writing</div>
+                        <div>Quantum Field Theory</div>
+                        <div>Relativity and Black Holes</div>
+                        <div>Statistical Mechanics & Thermodynamics</div>
+                        <div>Electronics for Scientists Laboratory</div>
+                        <div>Advanced Data Acquisition and Analysis</div>
+                        <div>Research Communication and Scientific Writing</div>
                     </div>
 
                     <h3>Mathematics</h3>
@@ -151,41 +165,57 @@
                         <div>Real Analysis I</div>
                         <div>Real Analysis II</div>
                         <div>Complex Analysis</div>
-                    </div>
-                
-                    <h3>Computer Science</h3>
-
-                    <div class="toggle-section" data-target="cs-completed">
-                        <span class="toggle-indicator">+</span>Completed Coursework</div>
-                    <div id="cs-completed" class="coursework-content">
-                        <div>Computational Methods in Electrical Engineering and Computer Engineering</div>
-                        <div></div>
-                        <div></div>
+                        <div>Differential Geometry I</div>
+                        <div>Differential Geometry II</div>
+                        <div>Partial Differential Equations I</div>
+                        <div>Partial Differential Equations II</div>
+                        <div>Partial Differential Equations III</div>
                     </div>
 
-                    <div class="toggle-section" data-target="cs-prospective">
-                        <span class="toggle-indicator">+</span>Prospective Coursework</div>
-                    <div id="cs-prospective" class="coursework-content">
-                        <div>Introduction to Computer Science</div>
-                        <div>Introduction to Programming with Python</div>
-                        <div>Introduction to Artificial Intelligence with Python</div>
-                        <div>Supervised Machine Learning: Regression and Classification</div>
-                        <div>Advanced Learning Algorithms</div>
-                        <div>Unsupervised Learning and Recommender Systems</div>
-                        <div>Neural Networks and Deep Learning</div>
-                        <div>Improving Deep Neural Networks: Hyperparameter Tuning, Regularization, and Optimization</div>
-                        <div>Structuring Machine Learning Projects</div>
-                        <div>Convuolutional Neural Networks</div>
-                        <div>Sequence Models</div>
-                        <div></div>
-                        <div></div>
-                    </div>
+                    <div class="certifications-container">
+                        <h2>Certifications</h2>
+                        <div class="certifications">
+                            
+                            <div class="certificate">
+                                <img src="https://prod-discovery.edx-cdn.org/cdn-cgi/image/width=auto,height=auto,quality=75,format=webp/media/course/image/da1b2400-322b-459b-97b0-0c557f05d017-a3d1899c3344.small.png" alt="CS50X Certificate">
+                                <a href="certificate-link-here" target="_blank">CS50X - Introduction to Computer Science</a>
+                            </div>
+
+                            <div class="certificate">
+                                <img src="https://prod-discovery.edx-cdn.org/cdn-cgi/image/width=auto,height=auto,quality=75,format=webp/media/course/image/2cc794d0-316d-42f7-bbfd-25c34e4cd5df-033e46d516c0.small.png" alt="CS50P Certificate">
+                                <a href="certificate-link-here" target="_blank">CS50P - Introduction to Programming with Python</a>
+                            </div>
+
+                            <div class="certificate">
+                                <img src="https://prod-discovery.edx-cdn.org/cdn-cgi/image/width=auto,height=auto,quality=75,format=webp/media/course/image/3a31db71-de8f-45f1-ae65-11981ed9d680-b801bb328333.small.png" alt="CS50AI Certificate">
+                                <a href="certificate-link-here" target="_blank">CS50AI - Introduction to Artificial Intelligence</a>
+                            </div>
+
+                            <div class="certificate">
+                                <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://d15cw65ipctsrr.cloudfront.net/8c/b75571d8ad4d24bddff436beab0bad/DL_Square_Banner_Coursera_800x800.png?auto=format%2Ccompress%2C%20enhance&dpr=2&w=265&h=216&fit=crop&q=50" alt="Coursera MathML Certificate">
+                                <a href="certificate-link-here" target="_blank">Coursera Specialization in Mathematics for ML & DS</a>
+                            </div>
+
+                            <div class="certificate">
+                                <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://d15cw65ipctsrr.cloudfront.net/3a/9d2a7af297483a845340bcfbac6f1e/MLS.course-banners-01_Course-Logo-.png?auto=format%2Ccompress%2C%20enhance&dpr=2&w=265&h=216&fit=crop&q=50" alt="Coursera ML Certificate">
+                                <a href="certificate-link-here" target="_blank">Coursera Specialization in Machine Learning</a>
+                            </div>
+
+                            <div class="certificate">
+                                <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://d15cw65ipctsrr.cloudfront.net/a4/079d5e7c7b45ac9107f22bfcfeab91/Specialization-logo.png?auto=format%2Ccompress%2C%20enhance&dpr=2&w=265&h=216&fit=crop&q=50" alt="Coursera DL Certificate">
+                                <a href="certificate-link-here" target="_blank">Coursera Specialization in Deep Learning</a>
+                            </div>
+                            
+                            <!-- Add more certificates here -->
+                        
+                        </div>
+                    </div>                 
 
                 </div>
             </div>
         </main>
     </body>
-    <footer style="font-family: Roboto, sans-serif;">
+    <footer style="font-family: Arial, Helvetica, sans-serif, sans-serif;">
         © 2024 by Massee Akbar
       </footer>      
 </html>
