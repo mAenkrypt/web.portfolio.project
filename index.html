@@ -11,15 +11,11 @@
         
         <title>Hey, I'm Massee!</title>
 
-        <!--Messing with Fonts-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Anta&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
 
     </head>
     <body class="container">
+        
         <div class="profile">
             <img class="profile-pic" src="files/colombia-photo.jpg" alt="A photo of me">
             <div class="name">
@@ -37,43 +33,23 @@
                 </div>
             </div>
         </div>
+
         <main>
+
+            <div id="quote-section">
+                <h2>Quote of the Day</h2>
+                <div id="quote-text"></div>
+            </div>
+            
+
             <div>
                 <h2>About Me</h2>
-                <div class="subtitle">Research Assitant at Lee Nano-Optics Lab</div>
-                <div class="bio_text">Hey, I'm Massee! Welcome to my webpage portfolio I built as part of my final project for
-                    <a href="https://cs50.harvard.edu/x/2024/">Harvard's CS50</a>.</div>
-                <h2>My Academic Journey</h2>
-                <div class="bio_text">I went to California High School in the East Bay Area of Northern California. During my junior year, I had the
-                    incredible privilege to study abroad in France at the American School of Grenoble. Upon return to Cal High
-                    for my final year after an immersive year as an exchange student, I had set my eyes upon UC Irvine's undergraduate program in 
-                    Biological Sciences. 
+                <div>Hey, I'm Massee! I am currently finishing my fourth year at the University of California, Irvine. I made the transition from biological sciences 
+                    to applied physics during the end of my third year, and shortly thereafter, added my mathematics major. I currently have the privilege
+                    of beginning my Research Assistantship at Dr. Howard Lee's Nano-Optics Research Laboratory. One of the research group's focus is on the fabrication 
+                    of epsilon-near-zero materials for revolutionary nano-optical applications to optical communcations and medical imaging. I hope to attend graduate
+                    school to obtain my PhD in Applied Physics with research in Nanophotonics.
                 </div>
-                <div class="bio_text">
-                    My initial exposure to the physical sciences began with the  General Chemistry sequence, but it all changed when
-                    I began Calculus I. I came in with a shaky foundation of precalculus and trigonometry. During the length of the first two weeks of 
-                    Calculus I, I felt I had reached my mental limit spending the first few hours of each morning trying to wrap my head around the subject
-                    and feeling completely overwhelemed and inadequate. Through the toil, however, there was a growing desire towards absorbing the material.
-                    After deep work and focus, I had scored a 39/40 on the first midterm examination exactly five weeks from the start of the course. A couple 
-                    hours later, my score changed to 40/40, the answer key had a mistake. I was delighted, but it did not come to me as a surprise. This was 
-                    the first of many times that I would enter the time warp– the intellectual black-hole where I would meet my limit, and through diligence,
-                    optimism, and persistence of thinking I would grow. A wave of content and a sense of accomplishment. All it took was
-                    five weeks to go from learning basic trigonometric functions to applying the chain rule for to derivatives.
-                </div>
-                <div class="bio_text">
-                    During my freshman year, I was exposed to the physical sciences. Courses in general chemistry and calculus. I musterd up the courage to
-                    make a switch into the Applied Physics major. Shortly thereafter, I declared a double major in mathematics and enrolled in core computer
-                    science courses. During this time, I had the oppurtunity and privilege to join Dr. Howard Lee's Nanophotonics Laboratory and work under my
-                    graduate student mentor David Dang to employ novel machine learning models to tackle physical problems. 
-                </div>
-            </div>
-            <div class="about_me">
-                <span class="bolden">About me: </span> Hey, I'm Massee! I am a fourth year undergraduate at UC Irvine. 
-                I came into UCI as a Bio Sci major, and as I was exposed to mathematics and the physical sciences, I mustered
-                up the courage and made the transition into Applied Physics at the end of my third year. I have declared
-                a double major in mathematics middway into my fourth year. After taking my first computer science and programming
-                this fall, I am pursuing core computer science courses and plan to attend graduate school for further studies in 
-                computer science.
             </div>
             
             <div>
@@ -103,7 +79,7 @@
                 <h2>Relevant Coursework</h2>
                 <div>
                     
-                    <h3>Physics</h3>
+                    <h3 class="course-hover"><a href="https://youtu.be/BfdGBBSQ2fU?si=xrrh5B9VHEak2YMi" target="_blank" rel="noopener noreferrer">Physics</a></h3>
 
                     <div class="toggle-section" data-target="physics-completed">
                         <span class="toggle-indicator">+</span>Completed Coursework</div>
@@ -135,15 +111,15 @@
                         <div>Research Communication and Scientific Writing</div>
                     </div>
 
-                    <h3>Mathematics</h3>
+                    <h3 class="course-hover"><a href="https://youtu.be/24rZwis4npw?si=SaFwcIHTIcvgjy2b&t=1141" target="_blank" rel="noopener noreferrer">Mathematics</a></h3>
                     
                     <div class="toggle-section" data-target="mathematics-completed">
                         <span class="toggle-indicator">+</span>Completed Coursework</div>
                     <div id="mathematics-completed" class="coursework-content">
-                        <div>Single-Variable Calculus I</div>
-                        <div>Single-Variable Calculus II</div>
-                        <div>Multivariable Calculus I</div>
-                        <div>Multivariable Calculus II</div>
+                        <div>Differential Calculus</div>
+                        <div>Integral Calculus</div>
+                        <div>Multivariate Calculus</div>
+                        <div>Multivariate-Vector Calculus</div>
                         <div>Introduction to Linear Algebra</div>
                         <div>Ordinary Differential Equations</div>
                         <div></div>
@@ -180,42 +156,20 @@
                                 <img src="https://prod-discovery.edx-cdn.org/cdn-cgi/image/width=auto,height=auto,quality=75,format=webp/media/course/image/da1b2400-322b-459b-97b0-0c557f05d017-a3d1899c3344.small.png" alt="CS50X Certificate">
                                 <a href="certificate-link-here" target="_blank">CS50X - Introduction to Computer Science</a>
                             </div>
-
-                            <div class="certificate">
-                                <img src="https://prod-discovery.edx-cdn.org/cdn-cgi/image/width=auto,height=auto,quality=75,format=webp/media/course/image/2cc794d0-316d-42f7-bbfd-25c34e4cd5df-033e46d516c0.small.png" alt="CS50P Certificate">
-                                <a href="certificate-link-here" target="_blank">CS50P - Introduction to Programming with Python</a>
-                            </div>
-
-                            <div class="certificate">
-                                <img src="https://prod-discovery.edx-cdn.org/cdn-cgi/image/width=auto,height=auto,quality=75,format=webp/media/course/image/3a31db71-de8f-45f1-ae65-11981ed9d680-b801bb328333.small.png" alt="CS50AI Certificate">
-                                <a href="certificate-link-here" target="_blank">CS50AI - Introduction to Artificial Intelligence</a>
-                            </div>
-
-                            <div class="certificate">
-                                <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://d15cw65ipctsrr.cloudfront.net/8c/b75571d8ad4d24bddff436beab0bad/DL_Square_Banner_Coursera_800x800.png?auto=format%2Ccompress%2C%20enhance&dpr=2&w=265&h=216&fit=crop&q=50" alt="Coursera MathML Certificate">
-                                <a href="certificate-link-here" target="_blank">Coursera Specialization in Mathematics for ML & DS</a>
-                            </div>
-
-                            <div class="certificate">
-                                <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://d15cw65ipctsrr.cloudfront.net/3a/9d2a7af297483a845340bcfbac6f1e/MLS.course-banners-01_Course-Logo-.png?auto=format%2Ccompress%2C%20enhance&dpr=2&w=265&h=216&fit=crop&q=50" alt="Coursera ML Certificate">
-                                <a href="certificate-link-here" target="_blank">Coursera Specialization in Machine Learning</a>
-                            </div>
-
-                            <div class="certificate">
-                                <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://d15cw65ipctsrr.cloudfront.net/a4/079d5e7c7b45ac9107f22bfcfeab91/Specialization-logo.png?auto=format%2Ccompress%2C%20enhance&dpr=2&w=265&h=216&fit=crop&q=50" alt="Coursera DL Certificate">
-                                <a href="certificate-link-here" target="_blank">Coursera Specialization in Deep Learning</a>
-                            </div>
                             
                             <!-- Add more certificates here -->
                         
                         </div>
-                    </div>                 
-
+                    </div>      
+                    
+                    <div class="certifications-container">
+                        <h2>Projects & Publications</h2>
+                    </div>
                 </div>
             </div>
         </main>
     </body>
     <footer style="font-family: Arial, Helvetica, sans-serif, sans-serif;">
-        © 2024 by Massee Akbar
+        © 2024 by Massee Akbar – I built this webpage as part of my final project for Harvard's CS50X!
       </footer>      
 </html>

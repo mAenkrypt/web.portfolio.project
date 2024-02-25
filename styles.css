@@ -111,7 +111,7 @@ main {
 img {
     width: 100%;
     height: auto;
-    filter: grayscale(20%);
+    filter: grayscale(0%);
 }
 
 a {
@@ -279,3 +279,10 @@ a:hover {
 .certificate img {
     filter: saturate(100%); /* Reduce color saturation by 50% */
 }
+
+.course-hover a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* Quote of the day styling adjustments */
+
